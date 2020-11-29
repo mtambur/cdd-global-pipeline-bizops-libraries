@@ -27,7 +27,8 @@ void getAPIKeyFromCredentials() {
   com.cloudbees.plugins.credentials.Credentials.class,
   currentBuild.rawBuild, null
  );
- env.DEVOPS_API_KEY = credentials.secret
+ //env.DEVOPS_API_KEY = credentials.secret
+ env.DEVOPS_API_KEY = 'eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6ImNkZGJpem9wcy5pbnRlZ3JhdGlvbkBnbWFpbC5jb20iLCJ0ZW5hbnRJZCI6ImNlY2RmMGI2LWJhYzgtNDMwNS1iOGE2LTNlYzI2YzhlNDkxNiIsInVzZXJJZCI6MSwianRpIjoiYjlmZmVlMjYtNDI2Yy00M2Y1LTg2ZjctOWYwNmJjMjFiMWZlIiwiZXhwIjoxNjE0NDI0MzA4fQ.vT2YeSNZdgLm1q5Ocs78DHctQfUDM0gEzvvlysMZEUxXqVXLFhXPDwFIjEcHhQcnagkA8twZWWHRPiL-xqOB0g'
 }
 
 void setGitEnvironmentVariables() {
